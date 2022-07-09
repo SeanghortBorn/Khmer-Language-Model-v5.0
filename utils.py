@@ -191,3 +191,10 @@ def read_txt_in_folder(path):
         for word in word_list:
             new_list.append(word)
     return new_list
+
+
+def remove_n(items_list):
+    new_list = []
+    for word in items_list:
+        new_list.append(word.replace("\n", ""))
+    return new_list

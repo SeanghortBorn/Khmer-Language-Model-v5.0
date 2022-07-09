@@ -31,8 +31,8 @@ def compute_cer(t1, t2):
     return sum_err*1.0/sum_len
 
 if __name__=='__main__':
-    path = 'data-2/'
-    with open(path+'output.txt', 'r', encoding='utf-8') as f:
+    path = 'testing-data/'
+    with open(path+'predicted_x.txt', 'r', encoding='utf-8') as f:
         t1 = f.readlines()
         t1 = [_[:-1] for _ in t1]
     with open(path+'gt.txt', 'r', encoding='utf-8') as f:
