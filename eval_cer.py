@@ -32,7 +32,7 @@ def compute_cer(t1, t2):
 
 if __name__=='__main__':
     path = 'testing-data/'
-    with open(path+'predicted_x.txt', 'r', encoding='utf-8') as f:
+    with open(path+'predicted.txt', 'r', encoding='utf-8') as f:
         t1 = f.readlines()
         t1 = [_[:-1] for _ in t1]
     with open(path+'gt.txt', 'r', encoding='utf-8') as f:
